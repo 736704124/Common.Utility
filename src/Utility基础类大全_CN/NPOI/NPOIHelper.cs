@@ -47,7 +47,7 @@ namespace HD.Helper.Common
         /// <param name="strHeaderText">表头文本</param>  
         public static MemoryStream Export(DataTable dtSource, string strHeaderText)
         {
-            HSSFWorkbook workbook = new HSSFWorkbook();
+            HSSFWorkbook workbook = new HSSFWorkbook(); //创建HSSFWorkbook对象
             ISheet sheet = workbook.CreateSheet();
 
             ICellStyle dateStyle = workbook.CreateCellStyle();
